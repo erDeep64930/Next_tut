@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@/public/D1c.png";
+import logo from "@/public/logo.png";
 import profileDefault from "@/public/D1a.png";
 import { FaGoogle, FaAlignCenter } from "react-icons/fa";
 import { RiCloseLargeLine } from "react-icons/ri";
@@ -16,12 +16,10 @@ const Navbar = () => {
   const pathname = usePathname();
   console.log(pathname);
   return (
-    <nav className="bg-blue-700 border-b border-blue-500">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <nav className="bg-black border-b border-blue-500 ">
+      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
         <div className="relative flex h-20 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
-            {/* <!-- Mobile menu button--> */}
-
             {/* this is for hamburger menu */}
             <div
               onClick={() => setOpen(!open)}
@@ -43,12 +41,8 @@ const Navbar = () => {
 
           <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
             {/* <!-- Logo --> */}
-            <Link className="flex flex-shrink-0 items-center" href="/">
-              <Image className="h-10 w-auto" src={logo} alt="PropertyPulse" />
-
-              <span className="hidden md:block text-orange-500 text-2xl font-bold ml-2">
-              DeepDesignWeb
-              </span>
+            <Link className="flex flex-shrink-0 items-center " href="/">
+              <Image className="h-16 w-auto" src={logo} alt="PropertyPulse" />
             </Link>
             {/* <!-- Desktop Menu Hidden below md screens --> */}
             <div className="hidden md:ml-6 md:block">
@@ -60,7 +54,7 @@ const Navbar = () => {
                         href={path}
                         className={`${
                           pathname === "path" ? "bg-black" : ""
-                        }text-white  hover:bg-gray-900 hover:text-white rounded-md px-3 py-2`}
+                        }text-white  hover:bg-gray-900 hover:text-white rounded-md px-3 hover:px-3 hover:py-2`}
                       >
                         {title}
                       </Link>
