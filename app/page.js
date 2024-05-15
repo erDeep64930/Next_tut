@@ -1,7 +1,11 @@
+import LearnLink from "@/components/LearnLink";
 
 
 export default function Home() {
   return (
-    <div>Hello from nextjs</div>
+    <div>
+      
+      <LearnLink />
+    </div>
   );
 }
