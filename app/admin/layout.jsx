@@ -3,7 +3,7 @@ import React from 'react'
 
 const layout = ({children}) => {
   return (
-    <div className=' sm:w-64 fixed sm:block hidden'>
+    <div className='px-2 sm:w-64 fixed sm:block hidden '>
         <AdminHeader />
         <div className='bg-green-400 sm:ml-72'>
         {children}
