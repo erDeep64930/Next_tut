@@ -8,7 +8,7 @@ import React from "react";
 const AdminHeader = () => {
   return (
     <div>
-      <div class="text-gray-700 space-y-2 mt-4 p-4 shadow-sm shadow-white rounded-xl border  border-gray-400 bg-white">
+      <div class="text-gray-700 space-y-2 mt-4 p-4 shadow-sm shadow-white rounded-xl border  border-gray-400 bg-white sm:w-64">
         {categoryList.map(({ id, title, icon, rank }) => {
           return (
             <Link

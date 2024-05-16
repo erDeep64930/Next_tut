@@ -1,18 +1,17 @@
-import AdminHeader from '@/components/AdminHeader'
-import React from 'react'
+import AdminHeader from "@/components/AdminHeader";
+import SearchBar from "@/components/SearchBar";
+import React from "react";
 
-const layout = ({children}) => {
+const layout = ({ children }) => {
   return (
-    <div className='px-2 sm:w-64 fixed sm:block hidden '>
-        <AdminHeader />
-        <div className='bg-green-400 sm:ml-72'>
+    <div className="px-2   ">
+      <AdminHeader />
+      <div className="bg-green-400 sm:ml-72 ">
+        <SearchBar />
         {children}
-        </div>
-
-
-
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default layout
+export default layout;
