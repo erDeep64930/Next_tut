@@ -1,5 +1,7 @@
 import AdminHeader from "@/components/AdminHeader";
+import RandomPost from "@/components/RandomPost";
 import SearchBar from "@/components/SearchBar";
+import Services from "@/components/Services";
 import React from "react";
 
 const layout = ({ children }) => {
@@ -9,6 +11,8 @@ const layout = ({ children }) => {
       <div className="bg-green-400 sm:ml-72 ">
         <SearchBar />
         {children}
+        <RandomPost />
+        <Services />
       </div>
     </div>
   );
