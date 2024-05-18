@@ -9,7 +9,7 @@ const Aboutpage = () => {
       <PropsTutorial name="ajay devgan"/>
       <PropsTutorial name="sunil setty"/>
       <PropsTutorial name="sanjay dutt"/>
-      <button className='mt-4 text-zinc-200 px-5 py-3 border shadow-lg ' onClick={()=>alert("welcome to about page")}>Welcome</button>
+      <button className='mt-4 text-zinc-200 px-5 py-3 border shadow-lg hover:animate-tilt' onClick={()=>alert("welcome to about page")}>Welcome</button>
     </div>
   )
 }

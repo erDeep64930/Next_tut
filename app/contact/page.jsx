@@ -1,9 +1,13 @@
+
+import { ServicePage } from "@/components/ServicePage";
 import React from "react";
 
 const Contactpage = () => {
   return (
     <div>
-      <div className="mt-32">
+      <ServicePage />
+
+      <div className="mt-32 container max-w-md mx-auto">
         <svg
           className="text-center mx-auto"
           width="537"
