@@ -1,8 +1,13 @@
+import ResponsiveHeader from '@/components/ResponsiveHeader'
+import Watch from '@/components/Watch'
 import React from 'react'
 
 const Productpage = () => {
   return (
-    <div>Productpage</div>
+    <div className='mt-50'>
+      <ResponsiveHeader />
+      <Watch />
+    </div>
   )
 }
 

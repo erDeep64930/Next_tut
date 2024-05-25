@@ -7,6 +7,7 @@ export const menuItem = [
     { id: 3, title: "About", path: "/about", icon: <FaAddressBook /> },
     { id: 4, title: "Products", path: "/products", icon: <FaInfoCircle /> },
     { id: 5, title: "Projects", path: "/projects", icon: <FaWheelchair /> },
+   
 ];
 
 export const categoryList = [
@@ -25,3 +26,14 @@ export const categoryList = [
     {id:4,icon:<FaLinkedin />},
     
   ]
+
+  // for pracice ResponsiveHeader
+  export const navMenu =
+[
+    {title:"HOME",link:"/"},
+    {title:"SERVICE",link:"/service"},
+    {title:"ABOUT",link:"/about"},
+    {title:"CONTACT",link:"/contact"},
+    {title:"PROJECT",link:"/project"},
+    {title:"LEARNING",link:"/learning"},
+  ];
