@@ -8,6 +8,7 @@ import { FaGoogle, FaAlignCenter } from "react-icons/fa";
 import { RiCloseLargeLine } from "react-icons/ri";
 import { usePathname } from "next/navigation";
 import { menuItem } from "@/constant/constant";
+import DarkModeSwitch from "./DarkModeSwitch";
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isProfileMenuOpen, setIsProfileMenuOpen] = useState(false);
@@ -74,6 +75,7 @@ const Navbar = () => {
           {/* <!-- Right Side Menu (Logged Out) --> */}
           <div className="hidden md:block md:ml-6">
             <div className="flex items-center">
+              <DarkModeSwitch />
               <button className="flex items-center text-white bg-gray-700 hover:bg-gray-900 hover:text-white rounded-md px-3 py-2">
                 <FaGoogle className="text-white mr-3" />
                 <span>Login or Register</span>
