@@ -9,12 +9,12 @@ export default function Home() {
       <GlowingGradientButton />
       <GlowingATMcard />
       {/* responsive layout design first for mobile then for desktop */}
-      {/* this is wavy animated heading strart*/}
+      {/* this is wavy animated heading start*/}
       <div className="relative text-center  mx-auto w-[400px] h-[100px] flex justify-between items-center">
         <h2 className="">DeepDesignWeb</h2>
         <h2 className="">DeepDesignWeb</h2>
       </div>
-      {/* this is wavy animated heading strart*/}
+      {/* this is wavy animated heading start*/}
 
       <h1 className="mt-10 p-20 text-center py-2 text-3xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
         Layout Grid Practice
